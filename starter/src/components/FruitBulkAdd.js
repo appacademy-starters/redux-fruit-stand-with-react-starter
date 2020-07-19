@@ -17,7 +17,7 @@ class FruitBulkAdd extends React.Component {
     const { fruitToAdd } = this.state;
     const fruit = fruitToAdd
       .split(' ')
-      .map((f) => f.toUpperCase());
+      .map((fruitName) => fruitName.toUpperCase());
     // TODO Dispatch to the store an action to add the fruits.
     this.setState({ fruitToAdd: '' })
   }
